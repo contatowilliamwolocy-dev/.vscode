@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>super mario</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
+    
+
+    <title>super mario</title>
+
+</head>
+
+
+<body>
+    <div class="video-mario">
+        <video src="././img/video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+    <div class="caixa-principal">
+        <img class="mario-logo" src="././img/logo.png" alt="logo do mario">
+        <p>encanadores mario e luigi - estao de volta para resolver seus problemas de encanação</p>
+        <p>voces ja se encontraram com problemas de encanamento? acho que sim agora mario e luigi estão na aria para
+            resolver seus problemas .</p>
+        <button onclick="cliqueinobotao()">
+            fale conosco
+        </button>
+    </div>
+
+    <img class="mario-luigi" src="././img/mario.png" alt="mario e luigi">
+
+    <form  action="https://formsubmit.co/contatowilliamwolocy@gmail.com" method="POST" class="fale-conosco" >
+        <p class="titulo"> fale conosco </p>
+
+        <input placeholder="seu nome" type="text" name="nome">
+        <input placeholder="seu gmail" type="email" nane="gmail">
+        <textarea placeholder="digite seus probelmas aqui" name="info"></textarea>
+        <button>enviar formulario</button>
+    </form>
+    <div class="mascara-form"></div>
+
+</body>
+
+<script>
+    let formulario = document.querySelector(".fale-conosco")
+    let mascara = document.querySelector(".mascara-form")
+
+    function cliqueinobotao() {
+        console.log("botao clicado")
+        formulario.style.left = "700px"
+        mascara.style.visibility = "visible"
+    }
+
+    function sumirformulario() {
+        formulario.style.left = "-230"
+        mascara.style.visibility = "hidden"
+
+    }
+</script>
+
+</html>
